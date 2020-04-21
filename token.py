@@ -1,7 +1,8 @@
-from enum import Enum
+from enum import Enum, unique
 
 
-class TokenEnum(Enum):
+@unique
+class TokenType(Enum):
     # Signal token
     BEGIN_OBJECT = 1
     BEGIN_ARRAY = 2
@@ -20,3 +21,6 @@ class TokenEnum(Enum):
 
     # end signal
     END_JSON = 65536
+
+    def __repr__(self):
+        return f'{self.__class__.__name__}.{self.name}'
