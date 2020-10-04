@@ -3,7 +3,7 @@ A json parser written in python3.
 
 ## Install
 ```commandline
-git clone https://github.com/xgguo101/jsonparser
+git clone https://github.com/xgguo101/jsonparser.git
 cd jsonparser
 pip3 install -e .
 ```
