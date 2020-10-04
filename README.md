@@ -1,10 +1,15 @@
 # jsonparser
-A JSON Parser written in Python3
+A json parser written in python3.
 
-# Usage
-## Simple Usage
+## Install
+```commandline
+pip3 install -e .
+```
+
+## Usage
 ```python
 >>> import jsonparser
+>>>
 >>> input_data = '[null, false, {"a": [true, 1], "b": 2e3}]'
 >>> r = jsonparser.from_string(input_data)
 >>> r
