@@ -1,4 +1,4 @@
-# jsonparser
+# Jsonparser
 A json parser written in python3.
 
 ## Install
