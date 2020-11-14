@@ -212,10 +212,10 @@ class Lexer:
                         if self._is_unicode_str(_next):
                             chunk += _next
                         else:
-                            raise ParseStringError(char, self._reader.tell())
+                            raise ParseStringError(char, self._reader.pos)
                     data.append(chunk)
                 else:
-                    raise ParseStringError(char, self._reader.tell())
+                    raise ParseStringError(char, self._reader.pos)
             else:
                 data.append(char)
             char = self._reader.read(1)
